@@ -8,12 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
+    let notifier = Notifier.shared
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Button("Send Notification To Watch") {
+                notifier.sendMessage()
+            }
         }
         .padding()
     }

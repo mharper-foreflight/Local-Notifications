@@ -16,6 +16,8 @@
 		D8797D5D2AFD61660087DB38 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8797D5C2AFD61660087DB38 /* ContentView.swift */; };
 		D8797D5F2AFD61670087DB38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8797D5E2AFD61670087DB38 /* Assets.xcassets */; };
 		D8797D622AFD61670087DB38 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8797D612AFD61670087DB38 /* Preview Assets.xcassets */; };
+		D8797D6D2AFD67C90087DB38 /* Notifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8797D6C2AFD67C90087DB38 /* Notifier.swift */; };
+		D8E7B0292AFD96E900B27897 /* KeepAlive.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E7B0282AFD96E900B27897 /* KeepAlive.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		D8797D5C2AFD61660087DB38 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D8797D5E2AFD61670087DB38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8797D612AFD61670087DB38 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D8797D6C2AFD67C90087DB38 /* Notifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifier.swift; sourceTree = "<group>"; };
+		D8E7B0232AFD968500B27897 /* Local Notifications Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Local Notifications Watch App.entitlements"; sourceTree = "<group>"; };
+		D8E7B0282AFD96E900B27897 /* KeepAlive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeepAlive.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +101,7 @@
 			children = (
 				D8797D482AFD61650087DB38 /* Local_NotificationsApp.swift */,
 				D8797D4A2AFD61650087DB38 /* ContentView.swift */,
+				D8797D6C2AFD67C90087DB38 /* Notifier.swift */,
 				D8797D4C2AFD61660087DB38 /* Assets.xcassets */,
 				D8797D4E2AFD61660087DB38 /* Preview Content */,
 			);
@@ -113,8 +119,10 @@
 		D8797D592AFD61660087DB38 /* Local Notifications Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				D8E7B0232AFD968500B27897 /* Local Notifications Watch App.entitlements */,
 				D8797D5A2AFD61660087DB38 /* Local_NotificationsApp.swift */,
 				D8797D5C2AFD61660087DB38 /* ContentView.swift */,
+				D8E7B0282AFD96E900B27897 /* KeepAlive.swift */,
 				D8797D5E2AFD61670087DB38 /* Assets.xcassets */,
 				D8797D602AFD61670087DB38 /* Preview Content */,
 			);
@@ -232,6 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8797D4B2AFD61650087DB38 /* ContentView.swift in Sources */,
+				D8797D6D2AFD67C90087DB38 /* Notifier.swift in Sources */,
 				D8797D492AFD61650087DB38 /* Local_NotificationsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -242,6 +251,7 @@
 			files = (
 				D8797D5D2AFD61660087DB38 /* ContentView.swift in Sources */,
 				D8797D5B2AFD61660087DB38 /* Local_NotificationsApp.swift in Sources */,
+				D8E7B0292AFD96E900B27897 /* KeepAlive.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,12 +385,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Local Notifications Watch App/Local Notifications Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Local Notifications Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = MAKN6KVU66;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Local Notifications Watch App/info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Local Notifications";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "com.foreflight.watch.Local-Notifications";
@@ -405,12 +417,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Local Notifications Watch App/Local Notifications Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Local Notifications Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = MAKN6KVU66;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Local Notifications Watch App/info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Local Notifications";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "com.foreflight.watch.Local-Notifications";

@@ -13,5 +13,9 @@ struct Local_Notifications_Watch_AppApp: App {
         WindowGroup {
             ContentView()
         }
+        
+        #if os(watchOS)
+        WKNotificationScene(controller: NotificationController.self, category: LocalNotification.categoryKey)
+        #endif
     }
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D87169E22B042F5300D7C984 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87169E12B042F5300D7C984 /* NotificationView.swift */; };
 		D8797D492AFD61650087DB38 /* Local_NotificationsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8797D482AFD61650087DB38 /* Local_NotificationsApp.swift */; };
 		D8797D4B2AFD61650087DB38 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8797D4A2AFD61650087DB38 /* ContentView.swift */; };
 		D8797D4D2AFD61660087DB38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8797D4C2AFD61660087DB38 /* Assets.xcassets */; };
@@ -45,6 +46,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D87169E12B042F5300D7C984 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		D8797D452AFD61650087DB38 /* Local Notifications.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Local Notifications.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8797D482AFD61650087DB38 /* Local_NotificationsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Local_NotificationsApp.swift; sourceTree = "<group>"; };
 		D8797D4A2AFD61650087DB38 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				D8E7B0232AFD968500B27897 /* Local Notifications Watch App.entitlements */,
 				D8797D5A2AFD61660087DB38 /* Local_NotificationsApp.swift */,
 				D8797D5C2AFD61660087DB38 /* ContentView.swift */,
+				D87169E12B042F5300D7C984 /* NotificationView.swift */,
 				D8E7B0282AFD96E900B27897 /* KeepAlive.swift */,
 				D8797D5E2AFD61670087DB38 /* Assets.xcassets */,
 				D8797D602AFD61670087DB38 /* Preview Content */,
@@ -252,6 +255,7 @@
 				D8797D5D2AFD61660087DB38 /* ContentView.swift in Sources */,
 				D8797D5B2AFD61660087DB38 /* Local_NotificationsApp.swift in Sources */,
 				D8E7B0292AFD96E900B27897 /* KeepAlive.swift in Sources */,
+				D87169E22B042F5300D7C984 /* NotificationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -66,6 +66,9 @@ extension SessionDelegate: WCSessionDelegate {
 }
 
 struct LocalNotification {
+    static let messageKey = "message_key"
+    static let categoryKey = "notification_delay_test"
+    
     let message: String
     let logger = Logger(subsystem: "com.foreflight.watch.Local-Notifications.watchkitapp", category: "LocalNotification")
 
@@ -92,6 +95,8 @@ struct LocalNotification {
         content.title = message
         content.sound = .defaultCritical
         content.interruptionLevel = .timeSensitive
+        content.userInfo = [Self.messageKey: message]
+        content.categoryIdentifier = Self.categoryKey
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 0.1, repeats: false)
         let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
         
